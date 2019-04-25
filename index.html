@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="img/theater.png">
+  <link rel="apple-touch-icon" href="img/theater.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" async href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+  <link rel="stylesheet" async href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+  <link rel="stylesheet" async href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Театры</title>
+</head>
+
+<body>
+  <div class="preloader" id="page_loader">
+    <div class="loader"><span id="load_perc">0%</span></div>
+  </div>
+
+  <a id="button"><i class="fas fa-angle-up fa-2x"></i></a>
+  <header class="d-flex flex-column align-items-center justify-content-center">
+    <ul class="word">
+      <li class="letter"><img src="img/1.png" alt="img"></li>
+      <li class="letter"><img src="img/2.png" alt="img"></li>
+      <li class="letter"><img src="img/3.png" alt="img"></li>
+      <li class="letter"><img src="img/4.png" alt="img"></li>
+      <li class="letter"><img src="img/5.png" alt="img"></li>
+      <li class="letter"><img src="img/6.png" alt="img"></li>
+    </ul>
+    <div class="lil-text">САМАРСКОЙ ОБЛАСТИ</div>
+    <a id="button_1" class="align-items-end"><i class="fas fa-angle-double-down"></i></a>
+  </header>
+
+  <div class="container">
+    <div class="theater d-flex flex-column align-items-center justify-content-center">
+      <ul id="kinds">
+        <li value='opera' class="active_1">Опера</li>
+        <li value='filar'>Филармония</li>
+        <li value='drama'>Драма</li>
+      </ul>
+      <hr>
+      <ul id="builds">
+        <li class="show text-center build" value="opera">
+          <a href="opera.html" target="_blank">
+            <img src="img/opera.jpg" alt="1">
+          </a>
+        </li>
+        <li class="hide text-center build" value="filar">
+          <a href="filarmonia.html" target="_blank">
+            <img src="img/filar.jpg" alt="1">
+          </a>
+        </li>
+        <li class="hide text-center build" value="drama">
+          <a href="drama.html" target="_blank">
+            <img src="img/drama.jpg" alt="1">
+          </a>
+        </li>
+        <li class="build-desc">
+          <img src="img/open-book.png" alt="desc">
+        </li>
+      </ul>
+    </div>
+    <!-- afisha-start- -->
+    <div class="afisha d-flex flex-column align-items-center justify-content-center">
+
+      <div class="afisha-title text-center">
+        Ближайшие шоу
+      </div>
+      <!-- carousel opera-->
+      <div class="owl-carousel opera">
+        <div class="prog">
+          <img src="img/afisha/opera/triviata.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Травиата</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/opera/bayaderka.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Баядерка</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/opera/lebed.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h5>
+              <p>Лебединое озеро</p>
+            </h5>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/opera/romeo.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h6>
+              <p>Ромео и Джульетта</p>
+            </h6>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/opera/shit.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Цирюльник</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/opera/nevesta.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h5>
+              <p>Царская невеста</p>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <!-- carousel opera end -->
+      <!-- carousel filarmonia-->
+      <div class="owl-carousel filarmonia">
+        <div class="prog">
+          <img src="img/afisha/filarmonia/pesni.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <p>Песни о войне</p>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/filarmonia/gogol.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Гоголь</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/filarmonia/petr.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h5>
+              <p>Пётр Захаров</p>
+            </h5>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/filarmonia/dance.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Танец огня</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/filarmonia/bob.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Боб Дилан</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/filarmonia/pushkin.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h5>
+              <p>Пушкин</p>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <!-- carousel filarmonia end -->
+      <!-- carousel drama-->
+      <div class="owl-carousel drama">
+        <div class="prog">
+          <img src="img/afisha/drama/night.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>LADIES` NIGHT</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/drama/lion.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h4>
+              <p>Лев зимой</p>
+            </h4>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/drama/house.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h5>
+              <p>Старый дом</p>
+            </h5>
+          </div>
+        </div>
+        <div class="prog">
+          <img src="img/afisha/drama/marat.jpg" alt="1">
+          <div class="prog-desc text-right">
+            <h6>
+              <p>Мой бедный Марат</p>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <!-- carousel drama end -->
+    </div>
+    <!-- afisha-end -->
+    <!-- maps-start -->
+    <div class="maps d-flex flex-column align-items-center justify-content-center">
+      <div class="afisha-title maps-title text-center">
+        Как добраться
+      </div>
+      <div class="maps-opera maps-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.2667787529713!2d50.10097861583272!3d53.195131579947564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c2a6259fb971395!2z0KHQsNC80LDRgNGB0LrQuNC5INCw0LrQsNC00LXQvNC40YfQtdGB0LrQuNC5INGC0LXQsNGC0YAg0L7Qv9C10YDRiyDQuCDQsdCw0LvQtdGC0LA!5e0!3m2!1sru!2sru!4v1556168495814!5m2!1sru!2sru"
+          width="900" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="maps-map maps-filarmonia">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9561.817566549902!2d50.0948385!3d53.1917666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86f1652d757bb0c!2z0KHQsNC80LDRgNGB0LrQsNGPINCT0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90LDRjyDQpNC40LvQsNGA0LzQvtC90LjRjw!5e0!3m2!1sru!2sru!4v1556168837828!5m2!1sru!2sru"
+          width="900" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="maps-map maps-drama">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9560.491612214026!2d50.097479!3d53.197712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x603ccc7d7839b075!2z0KHQsNC80LDRgNGB0LrQuNC5INCw0LrQsNC00LXQvNC40YfQtdGB0LrQuNC5INGC0LXQsNGC0YAg0LTRgNCw0LzRiyDQuNC8LiDQnC4g0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sru!4v1556168877205!5m2!1sru!2sru"
+          width="900" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- maps-end -->
+
+  </div>
+  <footer class="d-flex flex-column align-items-center justify-content-center">
+    <div class="footer-text text-center ">
+      <div class="designed">
+        <h5>Разработка и дизайн<br><br>
+          <strong><a href="https://vk.com/delvinru" target="_blank">Колесников Алексей</a></strong></h5>
+      </div>
+      <div class="copyright">
+        <i class="fas fa-copyright"></i> 2019 Все права защищены
+      </div>
+    </div>
+    <img src="img/admission-2974645_1920.png" alt="123" class="img-back">
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
