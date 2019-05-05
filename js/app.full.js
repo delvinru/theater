@@ -25,6 +25,7 @@ window.onload = function() {
     }
   }
   // main script
+  // variable
   let up = $('#button'),
     down = $('#button_1'),
     ul = $('#kinds'),
@@ -39,12 +40,12 @@ window.onload = function() {
     map_fil = $('.maps-filarmonia'),
     map_dram = $('.maps-drama')
 
-
+  // setup
   car_fil.hide();
   car_dram.hide();
   map_fil.hide();
   map_dram.hide();
-
+  // btn up
   $(window).scroll(function() {
     if ($(window).scrollTop() > 700) {
       up.addClass('show');
@@ -66,7 +67,7 @@ window.onload = function() {
       scrollTop: $(window).height()
     }, 700)
   })
-
+  // change content
   ul.on('click', function(e) {
     let op = $('#builds li[value="opera"]');
     let fil = $('#builds li[value="filar"]');
@@ -139,7 +140,7 @@ window.onload = function() {
     let url = builds.find('li.show').children('a').attr('href');
     window.open(url, "_self");
   })
-
+  // carousel
   $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -157,7 +158,7 @@ window.onload = function() {
       }
     }
   });
-
+  // back to main
   back.on('click', function(e) {
     history.go(-1);
   });
